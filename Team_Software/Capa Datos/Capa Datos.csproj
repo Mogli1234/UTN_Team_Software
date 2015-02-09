@@ -43,7 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cl_Conexion.cs" />
+    <Compile Include="Conexion\Cl_Conexion_MySQL.cs" />
+    <Compile Include="Datos_User.cs" />
+    <Compile Include="Metodos\CL_Metodos_Base_Datos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
