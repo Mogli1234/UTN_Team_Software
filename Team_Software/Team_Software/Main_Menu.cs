@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Team_Software
 {
-    public partial class Form1 : Form
+    public partial class Main_Menu : Form
     {
-        public Form1()
+        public Main_Menu()
         {
             InitializeComponent();
         }
