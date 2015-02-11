@@ -23,9 +23,13 @@ namespace Team_Software
             {
                 Main_Menu ma = new Main_Menu();
                 ma.Show();
-                
+                this.Hide();
             }
-            this.Close();
+            else
+            {
+                MessageBox.Show("Nombre de usuario o contraseña incorrectos", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+                
         }
 
         private void btnCancel_Click(object sender, EventArgs e)

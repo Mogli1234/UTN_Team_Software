@@ -16,5 +16,25 @@ namespace Team_Software
         {
             InitializeComponent();
         }
+
+        private void crearDeporteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_Deporte de = new frm_Deporte();
+            de.ShowDialog();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            frm_Login lo = new frm_Login();
+            lo.Show();
+            this.Hide();
+        }
+
+        private void verDeportesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_ViewSport view = new frm_ViewSport();
+            view.ShowDialog();
+        }
+
     }
 }

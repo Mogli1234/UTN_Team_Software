@@ -45,11 +45,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frm_Deporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Deporte.Designer.cs">
+      <DependentUpon>frm_Deporte.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_Login.Designer.cs">
       <DependentUpon>frm_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ViewSport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ViewSport.Designer.cs">
+      <DependentUpon>frm_ViewSport.cs</DependentUpon>
     </Compile>
     <Compile Include="Main_Menu.cs">
       <SubType>Form</SubType>
@@ -59,8 +71,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frm_Deporte.resx">
+      <DependentUpon>frm_Deporte.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_Login.resx">
       <DependentUpon>frm_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ViewSport.resx">
+      <DependentUpon>frm_ViewSport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main_Menu.resx">
       <DependentUpon>Main_Menu.cs</DependentUpon>

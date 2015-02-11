@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 using System.Data;
+using Entidades;
 
 namespace Capa_Datos
 {
@@ -80,6 +81,47 @@ namespace Capa_Datos
           Tabla_Datos.Columns.Clear();
       }
       #endregion
+
+      //Metodo de tipo select cargados con lsita generica
+
+      #region Metodo de cargar con lista generica de deportes
+      public List<Sports>Cargar_Deportes(String SentenciaSQL)
+      {
+          List<Sports> Objeto_Deporte = new List<Sports>();
+          try
+          {
+              Comando.CommandText = SentenciaSQL;
+              Conexion = ConexionMySQL.ConectarConMySQL();
+              Comando.Connection = Conexion;
+              Conexion.Open();
+              MySqlDataReader lector = Comando.ExecuteReader();
+              
+              while (lector.Read())
+              {
+                  Sports entidad_confi = new Sports();
+                  
+                  entidad_confi.Description = lector.GetString(2);
+                  entidad_confi.Deporte = lector.GetString(1);
+                  entidad_confi.Id = lector.GetInt16(0);
+                  Objeto_Deporte.Add(entidad_confi);
+              }
+              lector.Close();
+          }
+          catch (MySqlException e)
+          {
+
+              e.Message.ToString();
+          }
+          finally
+          {
+              Conexion.Close();
+          }
+          
+          return Objeto_Deporte;
+      }
+      #endregion
+
+
 
   }
 }

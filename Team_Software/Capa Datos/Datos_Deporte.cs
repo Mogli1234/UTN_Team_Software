@@ -34,5 +34,14 @@ namespace Capa_Datos
            metodos.EjecutarSQL(sentencia);
        }
         #endregion
+
+       //Metodos para mostrar
+        #region Metodo con sentencia select que retorna una lista
+       public List<Sports>Charge_Sports()
+       {
+           sentencia = "SELECT id,deporte,Descripcion FROM deporte";
+           return metodos.Cargar_Deportes(sentencia);
+       }
+        #endregion
     }
 }

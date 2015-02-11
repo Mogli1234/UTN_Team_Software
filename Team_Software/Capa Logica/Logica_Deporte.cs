@@ -31,5 +31,14 @@ namespace Capa_Logica
            datos.Delete_Sport(sport);
        }
        #endregion
+
+        //Metodos de sentencia select
+        #region Metodo de carga en lisa generica
+       public List<Sports> Charge_Sports() 
+       {
+           return datos.Charge_Sports();
+       }
+        #endregion
+
     }
 }
