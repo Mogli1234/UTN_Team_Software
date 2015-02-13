@@ -33,7 +33,7 @@ namespace Capa_Logica
        #endregion
 
         //Metodos de sentencia select
-        #region Metodo de carga en lisa generica
+        #region Metodo de carga en lista generica
        public List<Sports> Charge_Sports() 
        {
            return datos.Charge_Sports();

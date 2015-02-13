@@ -121,6 +121,44 @@ namespace Capa_Datos
       }
       #endregion
 
+      //Metodo de tipo select cargados con lista generica (Rutinas)
+
+      #region Metodo de cargar con lista generica de Rutinas
+      public List<Rutinas> Cargar_Rutinas(String SentenciaSQL)
+      {
+          List<Rutinas> Objeto_Rutina = new List<Rutinas>();
+          try
+          {
+              Comando.CommandText = SentenciaSQL;
+              Conexion = ConexionMySQL.ConectarConMySQL();
+              Comando.Connection = Conexion;
+              Conexion.Open();
+              MySqlDataReader lector = Comando.ExecuteReader();
+
+              while (lector.Read())
+              {
+                  Rutinas entidad_confi = new Rutinas();
+
+                  entidad_confi.Rutina = lector.GetString(1);
+                  entidad_confi.Id = lector.GetInt32(0);
+                  Objeto_Rutina.Add(entidad_confi);
+              }
+              lector.Close();
+          }
+          catch (MySqlException e)
+          {
+
+              e.Message.ToString();
+          }
+          finally
+          {
+              Conexion.Close();
+          }
+
+          return Objeto_Rutina;
+      }
+      #endregion
+
 
 
   }
