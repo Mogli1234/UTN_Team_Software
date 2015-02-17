@@ -21,6 +21,7 @@ namespace Team_Software
         {
             if (txtUsername.Text.Equals("Admin")&&txtPassword.Text.Equals("admin"))
             {
+                //btnLogin.Focus();
                 Main_Menu ma = new Main_Menu();
                 ma.Show();
                 this.Hide();

@@ -30,7 +30,7 @@ namespace Capa_Datos
         }
         #endregion
 
-        #region Delete Sport
+        #region Delete Rutina
         public void Delete_Rutina(Rutinas rutina) //Metodo Delete con la sentencia
         {
             sentencia = "DELETE rutina WHERE rutina.id= " + rutina.Id + "";//Sentencia SQL

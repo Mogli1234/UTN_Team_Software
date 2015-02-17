@@ -36,5 +36,26 @@ namespace Team_Software
             view.ShowDialog();
         }
 
+        private void crearRutinaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_Rutina oRut = new frm_Rutina();
+            oRut.Show();
+            this.Hide();
+        }
+
+        private void verRutinasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_VerRutinas oVr = new frm_VerRutinas();
+            oVr.Show();
+            this.Hide();
+        }
+
+        private void rutinaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_EditarRutinas oEdRutinas = new frm_EditarRutinas();
+            oEdRutinas.Show();
+            this.Hide();
+        }
+
     }
 }
