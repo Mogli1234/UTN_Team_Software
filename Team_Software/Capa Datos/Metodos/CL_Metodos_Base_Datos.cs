@@ -159,7 +159,47 @@ namespace Capa_Datos
       }
       #endregion
 
+      public Boolean Login(String SentenciaMySQL,string username, string password) 
+      {
+          bool estado = false;
+          try
+          {
+              LimpiarTabla();
+              Conexion = ConexionMySQL.ConectarConMySQL();
 
+              Comando.CommandText = SentenciaMySQL;
+              Comando.Connection = Conexion;
+              Conexion.Open();
+              Adaptador.SelectCommand = Comando;
+              Adaptador.SelectCommand.ExecuteNonQuery();
+              Adaptador.Fill(Tabla_Datos);
+              for (int i = 0; i < Tabla_Datos.Rows.Count-1; i++)
+              {
+                  string use = Tabla_Datos.Rows[i].ToString();
+                  if (username.Equals(use))
+                  {
+                      for (int j = 0; j < Tabla_Datos.Columns.Count; j++)
+                      {
+                          string pass = Tabla_Datos.Columns[j].ToString();
+                          if (password.Equals(pass))
+                          {
+                              estado = true;
+                          }
+                      }
+                  }
+              }
+          }
+          catch (MySqlException e)
+          {
+              e.Message.ToString();
+          }
+          finally
+          {
+              Conexion.Close();
+          }
+          return estado;
+
+      }
 
   }
 }

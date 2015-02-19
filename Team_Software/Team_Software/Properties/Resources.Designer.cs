@@ -63,9 +63,9 @@ namespace Team_Software.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _1395628427_delete {
+        internal static System.Drawing.Bitmap _1395628150_add_user {
             get {
-                object obj = ResourceManager.GetObject("1395628427_delete", resourceCulture);
+                object obj = ResourceManager.GetObject("1395628150_add-user", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace Team_Software.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _1395628632_edit_user {
+        internal static System.Drawing.Bitmap _1395628427_delete1 {
             get {
-                object obj = ResourceManager.GetObject("1395628632_edit-user", resourceCulture);
+                object obj = ResourceManager.GetObject("1395628427_delete1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -45,6 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Create_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Create_User.Designer.cs">
+      <DependentUpon>Create_User.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_EditarRutinas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +95,9 @@
     <Compile Include="frm_VerRutinas.Designer.cs">
       <DependentUpon>frm_VerRutinas.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Create_User.resx">
+      <DependentUpon>Create_User.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_EditarRutinas.resx">
       <DependentUpon>frm_EditarRutinas.cs</DependentUpon>
     </EmbeddedResource>
@@ -115,6 +124,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="frm_VerRutinas.resx">
       <DependentUpon>frm_VerRutinas.cs</DependentUpon>
@@ -145,6 +155,12 @@
       <Project>{397e8dd4-d86d-4f4e-8fdd-8a46ec43ce5c}</Project>
       <Name>Entidades</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1395628150_add-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1395628427_delete1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

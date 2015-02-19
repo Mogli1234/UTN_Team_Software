@@ -35,6 +35,7 @@
             this.txtPassword = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.btnLogin = new DevComponents.DotNetBar.ButtonX();
             this.btnCancel = new DevComponents.DotNetBar.ButtonX();
+            this.btnCreate = new DevComponents.DotNetBar.ButtonX();
             this.SuspendLayout();
             // 
             // labelX1
@@ -70,7 +71,7 @@
             this.txtUsername.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtUsername.Location = new System.Drawing.Point(107, 32);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(131, 20);
+            this.txtUsername.Size = new System.Drawing.Size(201, 20);
             this.txtUsername.TabIndex = 3;
             // 
             // txtPassword
@@ -83,14 +84,14 @@
             this.txtPassword.Location = new System.Drawing.Point(107, 75);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(131, 20);
+            this.txtPassword.Size = new System.Drawing.Size(201, 20);
             this.txtPassword.TabIndex = 4;
             // 
             // btnLogin
             // 
             this.btnLogin.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnLogin.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnLogin.Location = new System.Drawing.Point(82, 115);
+            this.btnLogin.Location = new System.Drawing.Point(44, 115);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(75, 23);
             this.btnLogin.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -102,7 +103,7 @@
             // 
             this.btnCancel.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnCancel.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnCancel.Location = new System.Drawing.Point(201, 115);
+            this.btnCancel.Location = new System.Drawing.Point(233, 115);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -110,12 +111,25 @@
             this.btnCancel.Text = "Cancel";
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
+            // btnCreate
+            // 
+            this.btnCreate.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnCreate.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnCreate.Location = new System.Drawing.Point(141, 115);
+            this.btnCreate.Name = "btnCreate";
+            this.btnCreate.Size = new System.Drawing.Size(75, 23);
+            this.btnCreate.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnCreate.TabIndex = 7;
+            this.btnCreate.Text = "Create";
+            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
+            // 
             // frm_Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(371, 160);
+            this.ClientSize = new System.Drawing.Size(397, 189);
+            this.Controls.Add(this.btnCreate);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtPassword);
@@ -138,6 +152,7 @@
         private DevComponents.DotNetBar.Controls.TextBoxX txtPassword;
         private DevComponents.DotNetBar.ButtonX btnLogin;
         private DevComponents.DotNetBar.ButtonX btnCancel;
+        private DevComponents.DotNetBar.ButtonX btnCreate;
 
 
     }

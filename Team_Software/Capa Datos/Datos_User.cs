@@ -21,5 +21,23 @@ namespace Capa_Datos
        }
         #endregion
 
+
+        #region Metodo para validar el usuario
+       public Boolean Exist(string user,string pass) 
+       {
+           sentencia = "SELECT Username,Password FROM users";
+           return metodos.Login(sentencia, user, pass);
+       }
+        #endregion
+
+        #region Metodo de Delete
+       public void Delete_User(Users user) 
+       {
+           sentencia = "DELETE * FROM users WHERE users.id= "+ user.Id;
+           metodos.EjecutarSQL(sentencia);
+       }
+        #endregion
+
+
     }
 }

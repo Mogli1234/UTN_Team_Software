@@ -7,11 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Capa_Logica;
 namespace Team_Software
 {
     public partial class frm_Login : Form
     {
+        Logica_User logica = new Logica_User();
         public frm_Login()
         {
             InitializeComponent();
@@ -19,9 +20,9 @@ namespace Team_Software
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (txtUsername.Text.Equals("Admin")&&txtPassword.Text.Equals("admin"))
+            if (logica.Login(txtUsername.Text,txtPassword.Text))
             {
-                //btnLogin.Focus();
+
                 Main_Menu ma = new Main_Menu();
                 ma.Show();
                 this.Hide();
@@ -36,6 +37,12 @@ namespace Team_Software
         private void btnCancel_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnCreate_Click(object sender, EventArgs e)
+        {
+            Create_User cr = new Create_User();
+            cr.ShowDialog();
         }
     }
 }
