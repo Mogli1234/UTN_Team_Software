@@ -175,12 +175,12 @@ namespace Capa_Datos
               Adaptador.Fill(Tabla_Datos);
               for (int i = 0; i < Tabla_Datos.Rows.Count-1; i++)
               {
-                  string use = Tabla_Datos.Rows[i].ToString();
+                  string use = Tabla_Datos.Rows[i][0].ToString();
                   if (username.Equals(use))
                   {
                       for (int j = 0; j < Tabla_Datos.Columns.Count; j++)
                       {
-                          string pass = Tabla_Datos.Columns[j].ToString();
+                          string pass = Tabla_Datos.Rows[j][i].ToString();
                           if (password.Equals(pass))
                           {
                               estado = true;

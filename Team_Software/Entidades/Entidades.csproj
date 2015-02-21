@@ -40,9 +40,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Rutinas.cs" />
-    <Compile Include="Sports.cs" />
-    <Compile Include="Users.cs" />
+    <Compile Include="Entidad Rutina\Rutinas.cs" />
+    <Compile Include="Entidad Sport\Sports.cs" />
+    <Compile Include="Entidad User\Users.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

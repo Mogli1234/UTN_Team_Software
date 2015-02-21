@@ -22,7 +22,7 @@ namespace Team_Software
         {
             if (logica.Login(txtUsername.Text,txtPassword.Text))
             {
-
+                MessageBox.Show("Bienvenido "+txtUsername.Text, "BIENVENIDO", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Main_Menu ma = new Main_Menu();
                 ma.Show();
                 this.Hide();
