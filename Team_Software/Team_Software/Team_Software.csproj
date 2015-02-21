@@ -51,6 +51,12 @@
     <Compile Include="Create_User.Designer.cs">
       <DependentUpon>Create_User.cs</DependentUpon>
     </Compile>
+    <Compile Include="Edit_Sport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit_Sport.Designer.cs">
+      <DependentUpon>Edit_Sport.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_EditarRutinas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +103,9 @@
     </Compile>
     <EmbeddedResource Include="Create_User.resx">
       <DependentUpon>Create_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit_Sport.resx">
+      <DependentUpon>Edit_Sport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_EditarRutinas.resx">
       <DependentUpon>frm_EditarRutinas.cs</DependentUpon>
@@ -161,6 +170,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\1395628427_delete1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1395628413_info-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1395628627_delete-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1395628632_edit-user.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -57,5 +57,12 @@ namespace Team_Software
             this.Hide();
         }
 
+        private void dtnEditSport_Click(object sender, EventArgs e)
+        {
+            Edit_Sport edi = new Edit_Sport();
+            edi.ShowDialog();
+        }
+
+
     }
 }

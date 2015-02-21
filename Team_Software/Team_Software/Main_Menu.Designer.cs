@@ -46,7 +46,7 @@
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.btnSalir = new System.Windows.Forms.ToolStripMenuItem();
             this.editarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.deporteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dtnEditSport = new System.Windows.Forms.ToolStripMenuItem();
             this.rutinaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.participanteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.herramientasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -182,18 +182,19 @@
             // editarToolStripMenuItem
             // 
             this.editarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.deporteToolStripMenuItem,
+            this.dtnEditSport,
             this.rutinaToolStripMenuItem,
             this.participanteToolStripMenuItem});
             this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
             this.editarToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
             this.editarToolStripMenuItem.Text = "&Editar";
             // 
-            // deporteToolStripMenuItem
+            // dtnEditSport
             // 
-            this.deporteToolStripMenuItem.Name = "deporteToolStripMenuItem";
-            this.deporteToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.deporteToolStripMenuItem.Text = "Deporte";
+            this.dtnEditSport.Name = "dtnEditSport";
+            this.dtnEditSport.Size = new System.Drawing.Size(152, 22);
+            this.dtnEditSport.Text = "Deporte";
+            this.dtnEditSport.Click += new System.EventHandler(this.dtnEditSport_Click);
             // 
             // rutinaToolStripMenuItem
             // 
@@ -270,7 +271,7 @@
         private System.Windows.Forms.ToolStripMenuItem eliminiarDeporteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem btnParticipante;
         private System.Windows.Forms.ToolStripMenuItem btnRutina;
-        private System.Windows.Forms.ToolStripMenuItem deporteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dtnEditSport;
         private System.Windows.Forms.ToolStripMenuItem rutinaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem participanteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ingresarParticipanteToolStripMenuItem;

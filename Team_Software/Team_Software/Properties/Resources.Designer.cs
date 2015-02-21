@@ -73,9 +73,39 @@ namespace Team_Software.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1395628413_info_user {
+            get {
+                object obj = ResourceManager.GetObject("1395628413_info-user", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _1395628427_delete1 {
             get {
                 object obj = ResourceManager.GetObject("1395628427_delete1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1395628627_delete_user {
+            get {
+                object obj = ResourceManager.GetObject("1395628627_delete-user", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1395628632_edit_user {
+            get {
+                object obj = ResourceManager.GetObject("1395628632_edit-user", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
