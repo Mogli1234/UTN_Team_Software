@@ -43,6 +43,7 @@
     <Compile Include="Entidad Rutina\Rutinas.cs" />
     <Compile Include="Entidad Sport\Sports.cs" />
     <Compile Include="Entidad User\Users.cs" />
+    <Compile Include="Entidad ParticipanteRutinaDeporte\Rutina_Deporte_Participante.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

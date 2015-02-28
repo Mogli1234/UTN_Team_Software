@@ -39,28 +39,32 @@ namespace Team_Software
         private void crearRutinaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frm_Rutina oRut = new frm_Rutina();
-            oRut.Show();
-            this.Hide();
+            oRut.ShowDialog();
         }
 
         private void verRutinasToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frm_VerRutinas oVr = new frm_VerRutinas();
-            oVr.Show();
-            this.Hide();
+            oVr.ShowDialog();
         }
 
         private void rutinaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frm_EditarRutinas oEdRutinas = new frm_EditarRutinas();
-            oEdRutinas.Show();
-            this.Hide();
+            oEdRutinas.ShowDialog();
         }
 
         private void dtnEditSport_Click(object sender, EventArgs e)
         {
             Edit_Sport edi = new Edit_Sport();
             edi.ShowDialog();
+        }
+
+
+        private void btnAsignar_Click(object sender, EventArgs e)
+        {
+            frm_AssingRutina assign = new frm_AssingRutina();
+            assign.ShowDialog();
         }
 
 

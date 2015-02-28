@@ -40,10 +40,7 @@ namespace Team_Software
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            Main_Menu oMm = new Main_Menu();
-            txtRutina.Clear();
-            oMm.Show();
-            this.Close();
+              this.Close();
         }
     }
 }

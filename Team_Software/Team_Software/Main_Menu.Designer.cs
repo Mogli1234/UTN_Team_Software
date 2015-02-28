@@ -44,6 +44,8 @@
             this.crearRutinaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.verRutinasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.asignarRutinasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnAsignar = new System.Windows.Forms.ToolStripMenuItem();
             this.btnSalir = new System.Windows.Forms.ToolStripMenuItem();
             this.editarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dtnEditSport = new System.Windows.Forms.ToolStripMenuItem();
@@ -70,7 +72,7 @@
             this.ayudaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(698, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(798, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -81,6 +83,7 @@
             this.btnParticipante,
             this.btnRutina,
             this.toolStripSeparator2,
+            this.asignarRutinasToolStripMenuItem,
             this.btnSalir});
             this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
             this.archivoToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
@@ -93,7 +96,7 @@
             this.verDeportesToolStripMenuItem,
             this.eliminiarDeporteToolStripMenuItem});
             this.btnDeporte.Name = "btnDeporte";
-            this.btnDeporte.Size = new System.Drawing.Size(143, 22);
+            this.btnDeporte.Size = new System.Drawing.Size(156, 22);
             this.btnDeporte.Text = "Deporte";
             // 
             // crearDeporteToolStripMenuItem
@@ -123,7 +126,7 @@
             this.eliminarParticipanteToolStripMenuItem,
             this.verParticipantesToolStripMenuItem});
             this.btnParticipante.Name = "btnParticipante";
-            this.btnParticipante.Size = new System.Drawing.Size(143, 22);
+            this.btnParticipante.Size = new System.Drawing.Size(156, 22);
             this.btnParticipante.Text = "Participantes";
             // 
             // ingresarParticipanteToolStripMenuItem
@@ -150,7 +153,7 @@
             this.crearRutinaToolStripMenuItem,
             this.verRutinasToolStripMenuItem});
             this.btnRutina.Name = "btnRutina";
-            this.btnRutina.Size = new System.Drawing.Size(143, 22);
+            this.btnRutina.Size = new System.Drawing.Size(156, 22);
             this.btnRutina.Text = "Rutina";
             // 
             // crearRutinaToolStripMenuItem
@@ -170,12 +173,27 @@
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(140, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(153, 6);
+            // 
+            // asignarRutinasToolStripMenuItem
+            // 
+            this.asignarRutinasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnAsignar});
+            this.asignarRutinasToolStripMenuItem.Name = "asignarRutinasToolStripMenuItem";
+            this.asignarRutinasToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.asignarRutinasToolStripMenuItem.Text = "Asignar Rutinas";
+            // 
+            // btnAsignar
+            // 
+            this.btnAsignar.Name = "btnAsignar";
+            this.btnAsignar.Size = new System.Drawing.Size(114, 22);
+            this.btnAsignar.Text = "Asignar";
+            this.btnAsignar.Click += new System.EventHandler(this.btnAsignar_Click);
             // 
             // btnSalir
             // 
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(143, 22);
+            this.btnSalir.Size = new System.Drawing.Size(156, 22);
             this.btnSalir.Text = "&Cerrar Sesion";
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
@@ -192,21 +210,21 @@
             // dtnEditSport
             // 
             this.dtnEditSport.Name = "dtnEditSport";
-            this.dtnEditSport.Size = new System.Drawing.Size(152, 22);
+            this.dtnEditSport.Size = new System.Drawing.Size(137, 22);
             this.dtnEditSport.Text = "Deporte";
             this.dtnEditSport.Click += new System.EventHandler(this.dtnEditSport_Click);
             // 
             // rutinaToolStripMenuItem
             // 
             this.rutinaToolStripMenuItem.Name = "rutinaToolStripMenuItem";
-            this.rutinaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.rutinaToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             this.rutinaToolStripMenuItem.Text = "Rutina";
             this.rutinaToolStripMenuItem.Click += new System.EventHandler(this.rutinaToolStripMenuItem_Click);
             // 
             // participanteToolStripMenuItem
             // 
             this.participanteToolStripMenuItem.Name = "participanteToolStripMenuItem";
-            this.participanteToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.participanteToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             this.participanteToolStripMenuItem.Text = "Participante";
             // 
             // herramientasToolStripMenuItem
@@ -240,7 +258,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(698, 435);
+            this.BackgroundImage = global::Team_Software.Properties.Resources._02_nobm9_AnimeAngel1;
+            this.ClientSize = new System.Drawing.Size(798, 514);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Main_Menu";
@@ -279,6 +298,8 @@
         private System.Windows.Forms.ToolStripMenuItem verParticipantesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem crearRutinaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem verRutinasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem asignarRutinasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem btnAsignar;
 
     }
 }

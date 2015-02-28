@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Rutina));
             this.lblRutina = new System.Windows.Forms.Label();
             this.txtRutina = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.btnAceptar = new DevComponents.DotNetBar.ButtonX();
@@ -90,7 +91,9 @@
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.txtRutina);
             this.Controls.Add(this.lblRutina);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frm_Rutina";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Rutina";
             this.ResumeLayout(false);
             this.PerformLayout();

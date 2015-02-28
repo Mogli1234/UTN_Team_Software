@@ -28,8 +28,6 @@ namespace Team_Software
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            Main_Menu oMm = new Main_Menu();
-            oMm.Show();
             this.Close();
         }
     }
