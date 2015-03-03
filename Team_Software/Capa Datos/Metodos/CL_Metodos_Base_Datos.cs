@@ -159,6 +159,7 @@ namespace Capa_Datos
       }
       #endregion
 
+      #region Metodo para verificar si exite el usuario
       public Boolean Login(String SentenciaMySQL,string username, string password) 
       {
           bool estado = false;
@@ -200,6 +201,11 @@ namespace Capa_Datos
           return estado;
 
       }
+      #endregion
+
+      #region Metodo para cargar los participantes
+
+      #endregion
 
   }
 }

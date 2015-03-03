@@ -67,6 +67,18 @@ namespace Team_Software
             assign.ShowDialog();
         }
 
+        private void btnAsignar_Click_1(object sender, EventArgs e)
+        {
+            frm_AssingRutina assing = new frm_AssingRutina();
+            assing.ShowDialog();
+        }
+
+        private void btnParticipante_Click(object sender, EventArgs e)
+        {
+            frm_Participante parti = new frm_Participante();
+            parti.ShowDialog();
+        }
+
 
     }
 }

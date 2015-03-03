@@ -39,11 +39,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entidad participante\Participante.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Entidad Rutina\Rutinas.cs" />
     <Compile Include="Entidad Sport\Sports.cs" />
     <Compile Include="Entidad User\Users.cs" />
-    <Compile Include="Entidad ParticipanteRutinaDeporte\Rutina_Deporte_Participante.cs" />
+    <Compile Include="Properties\Entidad ParticipanteRutinaDeporte\Rutina_Deporte_Participante.cs" />
+    <Compile Include="Tabla Relacional\Sport_Rutine_Participante.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

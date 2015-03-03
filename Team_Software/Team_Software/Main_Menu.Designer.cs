@@ -36,22 +36,22 @@
             this.crearDeporteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.verDeportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eliminiarDeporteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.participante = new System.Windows.Forms.ToolStripMenuItem();
             this.btnParticipante = new System.Windows.Forms.ToolStripMenuItem();
-            this.ingresarParticipanteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eliminarParticipanteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.verParticipantesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnRutina = new System.Windows.Forms.ToolStripMenuItem();
             this.crearRutinaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.verRutinasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.asignarRutinasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnAsignar = new System.Windows.Forms.ToolStripMenuItem();
             this.btnSalir = new System.Windows.Forms.ToolStripMenuItem();
             this.editarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dtnEditSport = new System.Windows.Forms.ToolStripMenuItem();
             this.rutinaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.participanteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.herramientasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.asignarRutinasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnAsignar = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.acercadeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -80,10 +80,9 @@
             // 
             this.archivoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnDeporte,
-            this.btnParticipante,
+            this.participante,
             this.btnRutina,
             this.toolStripSeparator2,
-            this.asignarRutinasToolStripMenuItem,
             this.btnSalir});
             this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
             this.archivoToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
@@ -96,7 +95,7 @@
             this.verDeportesToolStripMenuItem,
             this.eliminiarDeporteToolStripMenuItem});
             this.btnDeporte.Name = "btnDeporte";
-            this.btnDeporte.Size = new System.Drawing.Size(156, 22);
+            this.btnDeporte.Size = new System.Drawing.Size(152, 22);
             this.btnDeporte.Text = "Deporte";
             // 
             // crearDeporteToolStripMenuItem
@@ -119,21 +118,22 @@
             this.eliminiarDeporteToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
             this.eliminiarDeporteToolStripMenuItem.Text = "Eliminiar Deporte";
             // 
-            // btnParticipante
+            // participante
             // 
-            this.btnParticipante.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ingresarParticipanteToolStripMenuItem,
+            this.participante.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnParticipante,
             this.eliminarParticipanteToolStripMenuItem,
             this.verParticipantesToolStripMenuItem});
+            this.participante.Name = "participante";
+            this.participante.Size = new System.Drawing.Size(152, 22);
+            this.participante.Text = "Participantes";
+            // 
+            // btnParticipante
+            // 
             this.btnParticipante.Name = "btnParticipante";
-            this.btnParticipante.Size = new System.Drawing.Size(156, 22);
-            this.btnParticipante.Text = "Participantes";
-            // 
-            // ingresarParticipanteToolStripMenuItem
-            // 
-            this.ingresarParticipanteToolStripMenuItem.Name = "ingresarParticipanteToolStripMenuItem";
-            this.ingresarParticipanteToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
-            this.ingresarParticipanteToolStripMenuItem.Text = "Ingresar Participante";
+            this.btnParticipante.Size = new System.Drawing.Size(183, 22);
+            this.btnParticipante.Text = "Ingresar Participante";
+            this.btnParticipante.Click += new System.EventHandler(this.btnParticipante_Click);
             // 
             // eliminarParticipanteToolStripMenuItem
             // 
@@ -153,7 +153,7 @@
             this.crearRutinaToolStripMenuItem,
             this.verRutinasToolStripMenuItem});
             this.btnRutina.Name = "btnRutina";
-            this.btnRutina.Size = new System.Drawing.Size(156, 22);
+            this.btnRutina.Size = new System.Drawing.Size(152, 22);
             this.btnRutina.Text = "Rutina";
             // 
             // crearRutinaToolStripMenuItem
@@ -173,27 +173,12 @@
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(153, 6);
-            // 
-            // asignarRutinasToolStripMenuItem
-            // 
-            this.asignarRutinasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btnAsignar});
-            this.asignarRutinasToolStripMenuItem.Name = "asignarRutinasToolStripMenuItem";
-            this.asignarRutinasToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
-            this.asignarRutinasToolStripMenuItem.Text = "Asignar Rutinas";
-            // 
-            // btnAsignar
-            // 
-            this.btnAsignar.Name = "btnAsignar";
-            this.btnAsignar.Size = new System.Drawing.Size(114, 22);
-            this.btnAsignar.Text = "Asignar";
-            this.btnAsignar.Click += new System.EventHandler(this.btnAsignar_Click);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(149, 6);
             // 
             // btnSalir
             // 
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(156, 22);
+            this.btnSalir.Size = new System.Drawing.Size(152, 22);
             this.btnSalir.Text = "&Cerrar Sesion";
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
@@ -229,9 +214,26 @@
             // 
             // herramientasToolStripMenuItem
             // 
+            this.herramientasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.asignarRutinasToolStripMenuItem1});
             this.herramientasToolStripMenuItem.Name = "herramientasToolStripMenuItem";
             this.herramientasToolStripMenuItem.Size = new System.Drawing.Size(90, 20);
             this.herramientasToolStripMenuItem.Text = "&Herramientas";
+            // 
+            // asignarRutinasToolStripMenuItem1
+            // 
+            this.asignarRutinasToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnAsignar});
+            this.asignarRutinasToolStripMenuItem1.Name = "asignarRutinasToolStripMenuItem1";
+            this.asignarRutinasToolStripMenuItem1.Size = new System.Drawing.Size(156, 22);
+            this.asignarRutinasToolStripMenuItem1.Text = "Asignar Rutinas";
+            // 
+            // btnAsignar
+            // 
+            this.btnAsignar.Name = "btnAsignar";
+            this.btnAsignar.Size = new System.Drawing.Size(114, 22);
+            this.btnAsignar.Text = "Asignar";
+            this.btnAsignar.Click += new System.EventHandler(this.btnAsignar_Click_1);
             // 
             // ayudaToolStripMenuItem
             // 
@@ -288,17 +290,17 @@
         private System.Windows.Forms.ToolStripMenuItem crearDeporteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem verDeportesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eliminiarDeporteToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem btnParticipante;
+        private System.Windows.Forms.ToolStripMenuItem participante;
         private System.Windows.Forms.ToolStripMenuItem btnRutina;
         private System.Windows.Forms.ToolStripMenuItem dtnEditSport;
         private System.Windows.Forms.ToolStripMenuItem rutinaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem participanteToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ingresarParticipanteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem btnParticipante;
         private System.Windows.Forms.ToolStripMenuItem eliminarParticipanteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem verParticipantesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem crearRutinaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem verRutinasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem asignarRutinasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem asignarRutinasToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem btnAsignar;
 
     }

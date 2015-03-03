@@ -80,6 +80,9 @@
             // 
             // dtgParticipantes
             // 
+            this.dtgParticipantes.AllowUserToAddRows = false;
+            this.dtgParticipantes.AllowUserToDeleteRows = false;
+            this.dtgParticipantes.AllowUserToResizeColumns = false;
             this.dtgParticipantes.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dtgParticipantes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -92,7 +95,10 @@
             this.dtgParticipantes.DefaultCellStyle = dataGridViewCellStyle1;
             this.dtgParticipantes.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
             this.dtgParticipantes.Location = new System.Drawing.Point(7, 212);
+            this.dtgParticipantes.MultiSelect = false;
             this.dtgParticipantes.Name = "dtgParticipantes";
+            this.dtgParticipantes.ReadOnly = true;
+            this.dtgParticipantes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgParticipantes.Size = new System.Drawing.Size(439, 168);
             this.dtgParticipantes.TabIndex = 3;
             // 
@@ -114,9 +120,9 @@
             this.cmbRutina.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbRutina.FormattingEnabled = true;
             this.cmbRutina.ItemHeight = 14;
-            this.cmbRutina.Location = new System.Drawing.Point(215, 85);
+            this.cmbRutina.Location = new System.Drawing.Point(206, 85);
             this.cmbRutina.Name = "cmbRutina";
-            this.cmbRutina.Size = new System.Drawing.Size(127, 20);
+            this.cmbRutina.Size = new System.Drawing.Size(231, 20);
             this.cmbRutina.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.cmbRutina.TabIndex = 5;
             // 

@@ -39,7 +39,15 @@ namespace Capa_Datos
         #region Metodo con sentencia select que retorna una lista
        public List<Sports>Charge_Sports()
        {
-           sentencia = "SELECT id,deporte,Descripcion FROM deporte";
+           sentencia = "SELECT id,Deporte,Descripcion FROM deporte";
+           return metodos.Cargar_Deportes(sentencia);
+       }
+        #endregion
+
+        #region Metodo para cargar un combobox
+       public List<Sports> ChargeCombobox() 
+       {
+           sentencia = "SELECT Deporte FROM deporte";
            return metodos.Cargar_Deportes(sentencia);
        }
         #endregion

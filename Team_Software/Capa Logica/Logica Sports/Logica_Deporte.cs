@@ -40,5 +40,11 @@ namespace Capa_Logica
        }
         #endregion
 
+        #region Metodo para cargar el combobox
+       public List<Sports> Charge_Combobox() 
+       {
+           return datos.ChargeCombobox();
+       }
+        #endregion
     }
 }
