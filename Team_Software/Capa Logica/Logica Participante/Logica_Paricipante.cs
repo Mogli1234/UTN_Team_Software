@@ -25,5 +25,12 @@ namespace Capa_Logica
            return datos.Charger_Participante();
        }
         #endregion
+
+        #region Metodo de autocomplete
+       public DataTable fill(Participante parti)
+       {
+           return datos.Fill_Participante(parti);
+       }
+        #endregion
     }
 }

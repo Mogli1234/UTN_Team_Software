@@ -21,10 +21,18 @@ namespace Capa_Datos
         }
         #endregion
 
-        #region
+        #region cargar participantes
         public DataTable Charger_Participante() 
         {
             sentencia = "SELECT * FROM participante";
+            return metodos.SeleccionarBasedeDatos(sentencia);
+        }
+        #endregion
+
+        #region filtrado de los participantes
+        public DataTable Fill_Participante(Participante parti) 
+        {
+            sentencia = "SELECT * FROM participante WHERE Nombre LIKE '"+parti.Nombre+"%'";
             return metodos.SeleccionarBasedeDatos(sentencia);
         }
         #endregion

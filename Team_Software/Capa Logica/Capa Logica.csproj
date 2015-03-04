@@ -42,7 +42,8 @@
     <Compile Include="Logica Sports\Logica_Deporte.cs" />
     <Compile Include="Logica Rutina\Logica_Rutina.cs" />
     <Compile Include="Logica User\Logica_User.cs" />
-    <Compile Include="Logica_Paricipante.cs" />
+    <Compile Include="Logica Participante\Logica_Paricipante.cs" />
+    <Compile Include="Logica Tabla Relacional\Logica_Tabla_Relacion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

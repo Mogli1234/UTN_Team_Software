@@ -101,6 +101,7 @@
             this.dtgParticipantes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgParticipantes.Size = new System.Drawing.Size(439, 168);
             this.dtgParticipantes.TabIndex = 3;
+            this.dtgParticipantes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgParticipantes_CellClick);
             // 
             // cmbSports
             // 
@@ -137,6 +138,7 @@
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(289, 20);
             this.txtNombre.TabIndex = 6;
+            this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             // 
             // btnAgregar
             // 
@@ -148,6 +150,7 @@
             this.btnAgregar.Size = new System.Drawing.Size(84, 75);
             this.btnAgregar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnAgregar.TabIndex = 7;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // btnCancel
             // 
