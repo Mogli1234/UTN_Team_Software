@@ -45,6 +45,7 @@
     <Compile Include="Entidad Sport\Sports.cs" />
     <Compile Include="Entidad User\Users.cs" />
     <Compile Include="Properties\Entidad ParticipanteRutinaDeporte\Rutina_Deporte_Participante.cs" />
+    <Compile Include="Sport_Rutina.cs" />
     <Compile Include="Tabla Relacional\Sport_Rutine_Participante.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

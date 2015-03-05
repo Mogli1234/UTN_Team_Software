@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -77,6 +78,37 @@ namespace Team_Software
         {
             frm_Participante parti = new frm_Participante();
             parti.ShowDialog();
+        }
+
+        private void btnAssigSport_Click(object sender, EventArgs e)
+        {
+            frm_assignar_sport assig = new frm_assignar_sport();
+            assig.ShowDialog();
+        }
+
+        private void enviarInformacionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                MailMessage mail = new MailMessage();
+                SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
+
+                mail.From = new MailAddress("jaimeesquivelgomez@gmail.com");
+                mail.To.Add("jaimeesquivelgomez@gmail.com");
+                mail.Subject = "Test Mail";
+                mail.Body = "This is for testing SMTP mail from GMAIL";
+
+                SmtpServer.Port = 587;
+                SmtpServer.Credentials = new System.Net.NetworkCredential("Jaime A. Esquivel", "Jaime123");
+                SmtpServer.EnableSsl = true;
+
+                SmtpServer.Send(mail);
+                MessageBox.Show("mail Send");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
         }
 
 

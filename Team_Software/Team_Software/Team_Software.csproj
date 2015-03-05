@@ -57,6 +57,12 @@
     <Compile Include="Edit_Sport.Designer.cs">
       <DependentUpon>Edit_Sport.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_assignar_sport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_assignar_sport.Designer.cs">
+      <DependentUpon>frm_assignar_sport.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_AssingRutina.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +124,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Edit_Sport.resx">
       <DependentUpon>Edit_Sport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_assignar_sport.resx">
+      <DependentUpon>frm_assignar_sport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_AssingRutina.resx">
       <DependentUpon>frm_AssingRutina.cs</DependentUpon>

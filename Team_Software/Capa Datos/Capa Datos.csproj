@@ -49,6 +49,7 @@
     <Compile Include="Datos User\Datos_User.cs" />
     <Compile Include="Datos Participante\Datos_Participante.cs" />
     <Compile Include="Datos Tabla Relacional\Datos_Parti_Sport_Rutine.cs" />
+    <Compile Include="Datos_Rutina_Sport.cs" />
     <Compile Include="Metodos\CL_Metodos_Base_Datos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
