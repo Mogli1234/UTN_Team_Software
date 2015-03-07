@@ -87,11 +87,17 @@
     <Compile Include="frm_Login.Designer.cs">
       <DependentUpon>frm_Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_PArticipante.cs">
+    <Compile Include="frm_Participante.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_PArticipante.Designer.cs">
-      <DependentUpon>frm_PArticipante.cs</DependentUpon>
+    <Compile Include="frm_Participante.Designer.cs">
+      <DependentUpon>frm_Participante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ViewParticipante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ViewParticipante.Designer.cs">
+      <DependentUpon>frm_ViewParticipante.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_ViewSport.cs">
       <SubType>Form</SubType>
@@ -140,11 +146,14 @@
     <EmbeddedResource Include="frm_Login.resx">
       <DependentUpon>frm_Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_PArticipante.resx">
-      <DependentUpon>frm_PArticipante.cs</DependentUpon>
+    <EmbeddedResource Include="frm_Participante.resx">
+      <DependentUpon>frm_Participante.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_Rutina.resx">
       <DependentUpon>frm_Rutina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ViewParticipante.resx">
+      <DependentUpon>frm_ViewParticipante.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_ViewSport.resx">
       <DependentUpon>frm_ViewSport.cs</DependentUpon>

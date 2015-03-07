@@ -33,7 +33,7 @@ namespace Team_Software
 
         private void verDeportesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frm_ViewSport view = new frm_ViewSport();
+            frm_ViewParticipantes view = new frm_ViewParticipantes();
             view.ShowDialog();
         }
 
@@ -111,6 +111,16 @@ namespace Team_Software
             }
         }
 
+        private void participanteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_Participante oPartic = new frm_Participante();
+            oPartic.ShowDialog();
+        }
 
+        private void verParticipantesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_ViewParticipante oVerPartic = new frm_ViewParticipante();
+            oVerPartic.ShowDialog();
+        }
     }
 }

@@ -11,10 +11,10 @@ using Capa_Logica;
 
 namespace Team_Software
 {
-    public partial class frm_ViewSport : Form
+    public partial class frm_ViewParticipantes : Form
     {
         Logica_Deporte logica = new Logica_Deporte();
-        public frm_ViewSport()
+        public frm_ViewParticipantes()
         {
             InitializeComponent();
         }

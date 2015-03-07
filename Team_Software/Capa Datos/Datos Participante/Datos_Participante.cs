@@ -24,7 +24,7 @@ namespace Capa_Datos
         #region cargar participantes
         public DataTable Charger_Participante() 
         {
-            sentencia = "SELECT * FROM participante";
+            sentencia = "SELECT id,Nombre,Primer_Apellido,Segundo_Apellido,Edad,Fecha_Ingreso FROM participante";
             return metodos.SeleccionarBasedeDatos(sentencia);
         }
         #endregion

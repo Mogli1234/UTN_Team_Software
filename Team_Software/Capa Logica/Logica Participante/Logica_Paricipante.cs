@@ -34,7 +34,7 @@ namespace Capa_Logica
        #endregion
 
         #region Metodo para cargar Datos
-       public DataTable cargar() 
+       public DataTable Cargar() 
        {
            return datos.Charger_Participante();
        }

@@ -96,20 +96,20 @@
             this.crearDeporteToolStripMenuItem,
             this.verDeportesToolStripMenuItem});
             this.btnDeporte.Name = "btnDeporte";
-            this.btnDeporte.Size = new System.Drawing.Size(143, 22);
+            this.btnDeporte.Size = new System.Drawing.Size(152, 22);
             this.btnDeporte.Text = "Deporte";
             // 
             // crearDeporteToolStripMenuItem
             // 
             this.crearDeporteToolStripMenuItem.Name = "crearDeporteToolStripMenuItem";
-            this.crearDeporteToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
+            this.crearDeporteToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.crearDeporteToolStripMenuItem.Text = "Crear Deporte";
             this.crearDeporteToolStripMenuItem.Click += new System.EventHandler(this.crearDeporteToolStripMenuItem_Click);
             // 
             // verDeportesToolStripMenuItem
             // 
             this.verDeportesToolStripMenuItem.Name = "verDeportesToolStripMenuItem";
-            this.verDeportesToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
+            this.verDeportesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.verDeportesToolStripMenuItem.Text = "Ver Deportes";
             this.verDeportesToolStripMenuItem.Click += new System.EventHandler(this.verDeportesToolStripMenuItem_Click);
             // 
@@ -119,7 +119,7 @@
             this.btnParticipante,
             this.verParticipantesToolStripMenuItem});
             this.participante.Name = "participante";
-            this.participante.Size = new System.Drawing.Size(143, 22);
+            this.participante.Size = new System.Drawing.Size(152, 22);
             this.participante.Text = "Participantes";
             // 
             // btnParticipante
@@ -134,6 +134,7 @@
             this.verParticipantesToolStripMenuItem.Name = "verParticipantesToolStripMenuItem";
             this.verParticipantesToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
             this.verParticipantesToolStripMenuItem.Text = "Ver Participantes";
+            this.verParticipantesToolStripMenuItem.Click += new System.EventHandler(this.verParticipantesToolStripMenuItem_Click);
             // 
             // btnRutina
             // 
@@ -141,32 +142,32 @@
             this.crearRutinaToolStripMenuItem,
             this.verRutinasToolStripMenuItem});
             this.btnRutina.Name = "btnRutina";
-            this.btnRutina.Size = new System.Drawing.Size(143, 22);
+            this.btnRutina.Size = new System.Drawing.Size(152, 22);
             this.btnRutina.Text = "Rutina";
             // 
             // crearRutinaToolStripMenuItem
             // 
             this.crearRutinaToolStripMenuItem.Name = "crearRutinaToolStripMenuItem";
-            this.crearRutinaToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
+            this.crearRutinaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.crearRutinaToolStripMenuItem.Text = "Crear Rutina";
             this.crearRutinaToolStripMenuItem.Click += new System.EventHandler(this.crearRutinaToolStripMenuItem_Click);
             // 
             // verRutinasToolStripMenuItem
             // 
             this.verRutinasToolStripMenuItem.Name = "verRutinasToolStripMenuItem";
-            this.verRutinasToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
+            this.verRutinasToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.verRutinasToolStripMenuItem.Text = "Ver Rutinas";
             this.verRutinasToolStripMenuItem.Click += new System.EventHandler(this.verRutinasToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(140, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(149, 6);
             // 
             // btnSalir
             // 
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(143, 22);
+            this.btnSalir.Size = new System.Drawing.Size(152, 22);
             this.btnSalir.Text = "&Cerrar Sesion";
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
@@ -199,6 +200,7 @@
             this.participanteToolStripMenuItem.Name = "participanteToolStripMenuItem";
             this.participanteToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             this.participanteToolStripMenuItem.Text = "Participante";
+            this.participanteToolStripMenuItem.Click += new System.EventHandler(this.participanteToolStripMenuItem_Click);
             // 
             // herramientasToolStripMenuItem
             // 

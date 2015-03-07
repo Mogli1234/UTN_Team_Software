@@ -48,7 +48,7 @@ namespace Team_Software
             cmbRutina.DisplayMember = "Rutina";
             cmbRutina.ValueMember = "Id";
             //carga Dartagrid
-            dtgParticipantes.DataSource = participante.cargar();
+            dtgParticipantes.DataSource = participante.Cargar();
             dtgParticipantes.Columns[0].Visible = false;
             dtgParticipantes.Columns[1].HeaderText = "Nombre";
             dtgParticipantes.Columns[2].HeaderText = "Primer Apellido";

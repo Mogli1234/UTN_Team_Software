@@ -1,6 +1,6 @@
 ﻿namespace Team_Software
 {
-    partial class frm_ViewSport
+    partial class frm_ViewParticipantes
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_ViewSport));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_ViewParticipantes));
             this.dtg_sport = new DevComponents.DotNetBar.Controls.DataGridViewX();
             this.btn_Cancelar = new DevComponents.DotNetBar.ButtonX();
             ((System.ComponentModel.ISupportInitialize)(this.dtg_sport)).BeginInit();
@@ -81,7 +81,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(710, 331);
             this.Controls.Add(this.btn_Cancelar);
-            this.Controls.Add(this.dtg_sport);
+            this.Controls.Add(this.dtg_sport);      
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frm_ViewSport";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
