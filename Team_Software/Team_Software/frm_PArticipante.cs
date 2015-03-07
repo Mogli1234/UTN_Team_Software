@@ -23,7 +23,7 @@ namespace Team_Software
 
         private void buttonX1_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void frm_Participante_Load(object sender, EventArgs e)

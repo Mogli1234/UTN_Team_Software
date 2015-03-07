@@ -22,12 +22,12 @@ namespace Team_Software
         private void frm_ViewSport_Load(object sender, EventArgs e)
         {
             dtg_Participantes.DataSource = logicaPart.Cargar();
-            dtg_Participantes.Columns[5].Visible =false;
-            dtg_Participantes.Columns[4].HeaderText = "Nombre";
-            dtg_Participantes.Columns[3].HeaderText = "Primer Apellido";
-            dtg_Participantes.Columns[2].HeaderText = "Segundo Apellido";
-            dtg_Participantes.Columns[1].HeaderText = "Edad";
-            dtg_Participantes.Columns[0].HeaderText = "Fecha de Ingreso";
+            dtg_Participantes.Columns[0].Visible =false;
+            dtg_Participantes.Columns[1].HeaderText = "Nombre";
+            dtg_Participantes.Columns[2].HeaderText = "Primer Apellido";
+            dtg_Participantes.Columns[3].HeaderText = "Segundo Apellido";
+            dtg_Participantes.Columns[4].HeaderText = "Edad";
+            dtg_Participantes.Columns[5].HeaderText = "Fecha de Ingreso";
         }
 
         private void btnAceptarSalir_Click(object sender, EventArgs e)
