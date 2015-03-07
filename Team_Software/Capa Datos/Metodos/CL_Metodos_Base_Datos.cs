@@ -11,7 +11,7 @@ namespace Capa_Datos
 {
   public  class CL_Metodos_Base_Datos
   {
-      #region Instancias de las clases para hacer los metodos e base de datos
+      #region Instancias de las clases para hacer los metodos de base de datos
       Cl_Conexion_MySQL ConexionMySQL = new Cl_Conexion_MySQL();
       MySqlCommand Comando = new MySqlCommand();
       MySqlDataAdapter Adaptador = new MySqlDataAdapter();

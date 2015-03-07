@@ -1,4 +1,4 @@
-﻿using System;
+﻿    using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,7 +19,21 @@ namespace Capa_Logica
        }
         #endregion
 
-        #region MEtodo para cargar Datos
+       #region Actualizar datos de Participante
+       public void Actualiza_Participante(Participante participante)
+       {
+           datos.Update_Participante(participante);
+       }
+       #endregion
+
+       #region Eliminar Participante
+       public void Delete_Rutina(Participante participante)
+       {
+           datos.Delete_Participante(participante);
+       }
+       #endregion
+
+        #region Metodo para cargar Datos
        public DataTable cargar() 
        {
            return datos.Charger_Participante();

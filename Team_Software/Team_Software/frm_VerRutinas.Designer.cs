@@ -65,9 +65,9 @@
             // 
             this.btnAceptar.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnAceptar.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnAceptar.Location = new System.Drawing.Point(285, 255);
+            this.btnAceptar.Location = new System.Drawing.Point(272, 279);
             this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(75, 23);
+            this.btnAceptar.Size = new System.Drawing.Size(94, 36);
             this.btnAceptar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnAceptar.TabIndex = 2;
             this.btnAceptar.Text = "Aceptar";
@@ -78,7 +78,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(688, 303);
+            this.ClientSize = new System.Drawing.Size(688, 327);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.dtgRutinas);
             this.ForeColor = System.Drawing.SystemColors.ControlText;

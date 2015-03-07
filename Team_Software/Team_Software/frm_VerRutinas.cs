@@ -21,14 +21,19 @@ namespace Team_Software
 
         private void frm_VerRutinas_Load(object sender, EventArgs e)
         {
-            dtgRutinas.DataSource = oLogRutina.CargarRutinas();
-            dtgRutinas.Columns[1].HeaderText = "Detalle Rutina";
-            dtgRutinas.Columns[0].HeaderText = "Id Rutina";
+            this.CargarRutinas();
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+        
+        public void CargarRutinas()
+        {
+            dtgRutinas.DataSource = oLogRutina.CargarRutinas();
+            dtgRutinas.Columns[1].HeaderText = "Detalle Rutina";
+            dtgRutinas.Columns[0].Visible = false;
         }
     }
 }

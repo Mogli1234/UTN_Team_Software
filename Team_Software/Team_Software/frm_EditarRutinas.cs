@@ -33,10 +33,10 @@ namespace Team_Software
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            oRut.Id = Convert.ToInt32(dtgEditRutinas.SelectedCells[0].Value.ToString());
-            oRut.Rutina = txtRutina.Text;
-            oLogRutina.Actualiza_Rutina(oRut);
-            this.CargarRutina();
+                oRut.Id = Convert.ToInt32(dtgEditRutinas.SelectedCells[0].Value.ToString());
+                oRut.Rutina = txtRutina.Text;
+                oLogRutina.Actualiza_Rutina(oRut);
+                this.CargarRutina();
         }
 
         private void dtgEditRutinas_CellClick(object sender, DataGridViewCellEventArgs e)

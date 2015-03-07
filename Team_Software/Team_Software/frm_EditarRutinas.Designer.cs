@@ -101,10 +101,13 @@
             // btnEditar
             // 
             this.btnEditar.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnEditar.AutoSize = true;
             this.btnEditar.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnEditar.Location = new System.Drawing.Point(12, 254);
+            this.btnEditar.Image = global::Team_Software.Properties.Resources._1395628239_save;
+            this.btnEditar.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.btnEditar.Location = new System.Drawing.Point(12, 193);
             this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(75, 23);
+            this.btnEditar.Size = new System.Drawing.Size(75, 84);
             this.btnEditar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnEditar.TabIndex = 3;
             this.btnEditar.Text = "Editar";
@@ -125,10 +128,13 @@
             // btnEliminar
             // 
             this.btnEliminar.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnEliminar.AutoSize = true;
             this.btnEliminar.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnEliminar.Location = new System.Drawing.Point(155, 254);
+            this.btnEliminar.Image = global::Team_Software.Properties.Resources._1395628427_delete1;
+            this.btnEliminar.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.btnEliminar.Location = new System.Drawing.Point(126, 193);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(75, 23);
+            this.btnEliminar.Size = new System.Drawing.Size(75, 84);
             this.btnEliminar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnEliminar.TabIndex = 5;
             this.btnEliminar.Text = "Eliminar";
@@ -153,6 +159,7 @@
             this.Load += new System.EventHandler(this.EditarRutinas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgEditRutinas)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

@@ -29,6 +29,25 @@ namespace Capa_Datos
         }
         #endregion
 
+        #region Actualizar Participante
+        public void Update_Participante(Participante participante) //Metodo de actualizar con sentencia update
+        {
+            sentencia = "UPDATE participante SET Id= '" + participante.Id + "', Nombre= '" + participante.Nombre + "', Primer_Apellido= '" +
+                participante.Primer_apellido + "', Segundo_Apellido= '" + participante.Segundo_apellido + "',   Edad= '" +
+                participante.Edad + "', Fecha_Ingreso= '" + participante.Fecha_ingreso + "' WHERE participante.id= " + participante.Id + "";//Sentencia SQL
+            metodos.EjecutarSQL(sentencia);
+        }
+        #endregion
+
+        #region Delete Rutina
+        public void Delete_Participante(Participante participante) //Metodo Delete con la sentencia
+        {
+            sentencia = "DELETE FROM participante WHERE participante.id= " + participante.Id + "";//Sentencia SQL
+            metodos.EjecutarSQL(sentencia);
+        }
+        #endregion
+
+
         #region filtrado de los participantes
         public DataTable Fill_Participante(Participante parti) 
         {
